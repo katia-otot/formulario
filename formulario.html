@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="procesador.php">
+        <label for="nombre">Nombre:</label>
+		<input type="text" name="nombre" id="nombre" required>
+		<br>
+		<label for="apellido">Apellido:</label>
+		<input type="text" name="apellido" id="apellido" required>
+		<br>
+		<label for="edad">Edad:</label>
+		<input type="number" name="edad" id="edad" required>
+		<br>
+        <select name="pais">
+            <option value="">Seleccione un país</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Costa Rica">Costa Rica</option>
+            <option value="Cuba">Cuba</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="España">España</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="México">México</option>
+            <option value="Perú">Perú</option>
+            <option value="Uruguay">Uruguay</option>
+        </select>
+        <br>
+        <label>Genero: 
+            <input type="radio" name="genero" value="masculino"> Masculino
+        </label>
+        <label>
+            <input type="radio" name="genero" value="femenino"> Femenino
+        </label>
+        <label>
+            <input type="radio" name="genero" value="otro"> Otro
+        </label>
+        <br>
+        <label> Intereses: 
+            <input type="checkbox" name="intereses[]" value="deportes"> Deportes
+        </label>
+        <label>
+            <input type="checkbox" name="intereses[]" value="musica"> Música
+        </label>
+        <label>
+            <input type="checkbox" name="intereses[]" value="viajes"> Viajes
+        </label>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
