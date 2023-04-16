@@ -17,7 +17,7 @@
 		<label for="edad">Edad:</label>
 		<input type="number" name="edad" id="edad" required>
 		<br>
-        <select name="pais">
+        <select name="pais" required>
             <option value="">Seleccione un país</option>
             <option value="Argentina">Argentina</option>
             <option value="Brasil">Brasil</option>
@@ -33,25 +33,15 @@
             <option value="Uruguay">Uruguay</option>
         </select>
         <br>
-        <label>Genero: 
-            <input type="radio" name="genero" value="masculino"> Masculino
-        </label>
-        <label>
+        <label>Genero: </label>
+            <input type="radio" name="genero" value="masculino" required> Masculino
             <input type="radio" name="genero" value="femenino"> Femenino
-        </label>
-        <label>
             <input type="radio" name="genero" value="otro"> Otro
-        </label>
         <br>
-        <label> Intereses: 
-            <input type="checkbox" name="intereses[]" value="deportes"> Deportes
-        </label>
-        <label>
+        <label> Intereses: </label>
+            <input type="checkbox" name="intereses[]" value="deportes" required> Deportes
             <input type="checkbox" name="intereses[]" value="musica"> Música
-        </label>
-        <label>
             <input type="checkbox" name="intereses[]" value="viajes"> Viajes
-        </label>
         <br>
         <input type="submit" value="Enviar">
     </form>
